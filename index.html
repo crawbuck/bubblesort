@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bubblesort</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form class="js-form Form">
+      <label for="length">
+        Choose a number to create an randomized Array containing numbers from 1 to X(your selection)
+      </label>
+      <input type="number" required id="length" name="length" min="1" max="100000">
+      <input type="submit" value="Submit">
+    </form>
+    <div class="js-results Results">
+      <figure class="Results__Item">
+        <figcaption class="Results__Label">
+          Your input:
+        </figcaption>
+        <code class="js-input Results__Output"></code>
+      </figure>
+      <figure class="Results__Item">
+        <figcaption class="Results__Label">
+          Your input in a random order:
+        </figcaption>
+        <code class="js-randomized-order Results__Output"></code>
+      </figure>
+      <figure class="Results__Item">
+        <figcaption class="Results__Label">
+          Your input in a sorted order:
+        </figcaption>
+        <code class="js-sorted-order Results__Output"></code>
+      </figure>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  min-height: 100vh;
+  background: aliceblue;
+}
+
+.Form {
+  margin: 80px 24px;
+}
+
+.Form label {
+  width: 100%;
+  display: block;
+  padding-bottom: 6px;
+}
+
+.Results {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 80px 24px 24px;
+  overflow: hidden;
+}
+
+.Results__Item {
+  width: 100%;
+  margin: 0 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .Results__Item {
+    width: 33.33%;
+  }
+}
+
+.Results__Output {
+  display: block;
+  width: calc(100% - 48px);
+  word-wrap: break-word;
+  padding: 12px 24px;
+  margin-top: 12px;
+  overflow: scroll;
+  background: lemonchiffon;
+  min-height: 160px;
+}
