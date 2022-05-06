@@ -61,7 +61,7 @@ class BubbleSort {
   bubbleSortArray() {
     const { $randomArray } = this.state;
     const arr = [...$randomArray];
-    let swapped = true;
+    let swapped = false;
 
     do {
       swapped = false;
@@ -73,7 +73,7 @@ class BubbleSort {
           swapped = true;
         }
       });
-    } while(swapped);
+    } while (swapped);
 
     return arr;
   }
