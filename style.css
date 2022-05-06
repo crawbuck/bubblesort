@@ -38,10 +38,10 @@ body, html {
 
 .Results__Output {
   display: block;
-  width: calc(100% - 48px);
+  width: calc(100% - 72px);
   word-wrap: break-word;
   padding: 12px 24px;
-  margin-top: 12px;
+  margin: 12px 24px 0 0;
   overflow: scroll;
   background: lemonchiffon;
   min-height: 160px;
